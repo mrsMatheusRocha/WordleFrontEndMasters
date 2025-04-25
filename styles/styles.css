@@ -1,0 +1,139 @@
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.border {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 30%;
+  border-bottom: 3px solid black;
+  margin-bottom: 40px;
+}
+
+.row {
+  padding-bottom: 10px;
+  width: 265px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.square {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.859);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid grey;
+  height: 40px;
+  width: 40px;
+}
+
+.square-right {
+  border: 3px solid green;
+}
+
+.square-contains {
+  border: 3px solid yellow;
+}
+
+.square-wrong {
+  border: 3px solid grey;
+  transition: border-color 0.4s;
+  animation: wrong-border 0.8s alternate 1;
+}
+
+@keyframes wrong-border {
+  0% {
+    border-color: grey;
+  }
+  50% {
+    border-color: red;
+  }
+  100% {
+    border-color: grey;
+  }
+}
+
+@keyframes rainbow {
+  100%,
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  8% {
+    color: rgb(255, 127, 0);
+  }
+  16% {
+    color: rgb(255, 255, 0);
+  }
+  25% {
+    color: rgb(127, 255, 0);
+  }
+  33% {
+    color: rgb(0, 255, 0);
+  }
+  41% {
+    color: rgb(0, 255, 127);
+  }
+  50% {
+    color: rgb(0, 255, 255);
+  }
+  58% {
+    color: rgb(0, 127, 255);
+  }
+  66% {
+    color: rgb(0, 0, 255);
+  }
+  75% {
+    color: rgb(127, 0, 255);
+  }
+  83% {
+    color: rgb(255, 0, 255);
+  }
+  91% {
+    color: rgb(255, 0, 127);
+  }
+}
+.rainbow {
+  animation: rainbow 4s infinite linear;
+  font-size: 30px;
+}
+
+.container-loader {
+  min-height: 70px;
+}
+
+.loader {
+  margin: 0 auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 10px solid;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite alternate;
+}
+
+@keyframes animloader {
+  0% {
+    border-color: black rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+  }
+  33% {
+    border-color: black black rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+  }
+  66% {
+    border-color: black black black rgba(255, 255, 255, 0);
+  }
+  100% {
+    border-color: black black black black;
+  }
+} 
+
+main {
+  position: relative;
+  z-index: 1;
+}
