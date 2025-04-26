@@ -34,12 +34,21 @@
   width: 40px;
 }
 
+.square-normal {
+  background-color: grey;
+  color: white;
+}
+
 .square-right {
   border: 3px solid green;
+  background-color: green;
+  color: white;
 }
 
 .square-contains {
-  border: 3px solid yellow;
+  border: 3px solid goldenrod;
+  background-color: goldenrod;
+  color: white;
 }
 
 .square-wrong {
