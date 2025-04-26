@@ -65,6 +65,7 @@ async function init() {
           if (await validateWord(guess.toUpperCase()) === true) {
             for (let i = currentRow * 5; i < (currentRow + 1) * 5; i++) {
               squares[i].classList.remove("square-wrong", "square-right", "square-contains");
+              squares[i].classList.add("square-normal");
             }
             for (let i = currentRow * 5; i < (currentRow + 1) * 5; i++) {
               const letterCount = {};
