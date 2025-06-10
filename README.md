@@ -36,8 +36,6 @@ Este projeto tem como objetivo exercitar conceitos de lógica, manipulação de 
 
 ## 📸 Demonstração
 
-Adicione aqui um screenshot ou GIF do jogo em funcionamento (opcional):
-
 ![Demonstração do Wordle](https://github.com/mrsMatheusRocha/Portfolio/blob/a1f609b53aea833af28a10da2895839119cdd037/imgs/wordlemasters.png)
 
 ## 🤝 Contribuição
