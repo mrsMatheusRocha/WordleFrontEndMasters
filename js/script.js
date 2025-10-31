@@ -107,8 +107,7 @@ async function init() {
               squares[i].classList.add("square-wrong");
             }
           }
-        }
-        if (currentRow === 6) {
+        } else if (currentRow === 5) {
           alert("Você perdeu a palavra do dia é " + wordOfDay);
           return;
         }
@@ -123,4 +122,5 @@ async function init() {
 }
 
 init();
+
 
