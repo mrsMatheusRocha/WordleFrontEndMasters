@@ -108,7 +108,7 @@ async function init() {
             }
           }
         }
-        if (currentRow > 6) {
+        if (currentRow === 6) {
           alert("Você perdeu a palavra do dia é " + wordOfDay);
           return;
         }
@@ -123,3 +123,4 @@ async function init() {
 }
 
 init();
+
