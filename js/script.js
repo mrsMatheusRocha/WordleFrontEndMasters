@@ -39,7 +39,6 @@ async function init() {
     const action = event.key;
 
     if (action === "Backspace" && currentSquareIndex > currentRow * 5) {
-      // Lógica do Backspace
       currentSquareIndex--;
       squares[currentSquareIndex].textContent = "";
       squares[currentSquareIndex].classList.remove("square-wrong");
@@ -99,6 +98,12 @@ async function init() {
           }
         }
       }
+      
+      for (let j = 0; j < 5; j++) {
+        if (marks[j] === "") {
+          squares[startIndex + j].classList.add("square-normal");
+        }
+      }
 
       if (guess === wordOfDay) {
         alert("You win");
@@ -124,3 +129,4 @@ async function init() {
 }
 
 init();
+
